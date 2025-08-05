@@ -7,9 +7,9 @@ namespace Statistics {
     Stats ComputeStatistics(const std::vector<float>& data) {
         Stats stats;
         if (data.empty()) {
-            stats.average = 0.0f;
-            stats.min = 0.0f;
-            stats.max = 0.0f;
+            stats.average = NAN;
+            stats.min = NAN;
+            stats.max = NAN;
             return stats;
         }
         stats.min = data[0];
